@@ -4,11 +4,11 @@ buttonContainer.setAttribute("id", "buttonContainer");
 document.body.prepend(buttonContainer);
 
 const container = document.querySelector("#container");
-let cubePerSide = 64 ; 
+let cubePerSide = 64; 
 buildGrid(cubePerSide);
 
 function clearContainer() {
-    container.innerHTML = "" ;
+    container.innerHTML = "";
 }
 
 function buildGrid(size) {
