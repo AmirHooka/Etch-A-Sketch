@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+#container {
+    --user-choice: 64;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 768px;
+    height: 768px;
+}
+
+.square {
+    background-color: black;
+    flex: 0 0 calc(100% / var(--user-choice));
+    height: calc(100% / var(--user-choice));
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}
+
+#popBtn {
+    margin: 24px;    
+}
